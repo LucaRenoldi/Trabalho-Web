@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(Suggestions.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: 	no-repeat;
+}
+
+h1{
+    color:red;
+}
+
+label,textarea{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: red;
+}

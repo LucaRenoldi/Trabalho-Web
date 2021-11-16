@@ -1,0 +1,145 @@
+<DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <meta charset = "UTF-8">
+
+        <style>
+            body{
+                background-image: url(soldiers.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            
+           h1,legend,fieldset,label,strong,h2{
+               font-size: 15px;
+               color: whitesmoke;
+           }
+        </style>
+        <title>Form</title>
+
+        <script src="Buttons.js"></script>
+    </head>
+
+    <body>
+            <h1>Answer the questions below so you can find the best fit for you.</h1>
+
+        <form action = "" method = "GET" class = "Find Teammates">
+            
+            <fieldset>
+                <legend>In which platform do you play ?</legend>
+
+                <input type = "radio" id = "XBOX" name = "platform">
+                <label for = "XBOX">XBOX</label><br/>
+
+                <input type = "radio" id = "playstation" name = "platform">
+                <label for = "playstation">Playstation</label><br/>
+
+                <input type = "radio" id = "PC" name = "platform">
+                <lable for = "PC">PC</lable>
+            </fieldset><br/>
+
+            <label for = "FPS">Choose your FPS:</label>
+            <input list = "FPS">
+            <datalist id = "FPS">
+                <option value = "Apex Legends">
+                <option value = "Warzone">
+                <option value = "Fortnite">
+                <option value = "Hyperscape">
+                <option value = "CS-GO">
+                <option value = "Battlefield 2042">
+            </datalist><br><br/>
+
+            <legend>Do you play with mic ?:</legend><br/>
+
+            <input type="checkbox" name="yes" id="yes" value="yes">
+            <label for="yes">Yes</label><br/>
+
+            <input type="checkbox" name="no" id="no" value="no">
+            <label for="no">No</label><br><br/>
+            
+            <label for = "KDR">What is your KDR(Kill/Death Ratio)? :</label>
+            <input list = "KDR">
+            <datalist id = "KDR">
+                <option value = "<= 1.0">
+                <option value = "1.0 >= 1,5">
+                <option value = "1.5 <= 2.0">
+                <option value = "2.0 <= 2.5">
+                <option value = "2.5 <= 3.0">
+                <option value = "3 <">
+            </datalist><br><br/>
+
+            <legend>Check the boxes that better suits you as a player:</legend><br/>
+
+            <input type="checkbox" name="agressive" id="agressive" value="agressive">
+            <label for="agressive">Agressive player</label><br/>
+
+            <input type="checkbox" name="goesForWins" id="goesForWins" value="goesForWins">
+            <label for="goesForWins">Goes for wins</label><br/>
+
+            <input type="checkbox" name="goesForKills" id="goesForKills" value="goesForKills">
+            <label for="goesForKills">Goes for kills</label><br/>
+
+            <input type="checkbox" name="passive" id="passive" value="passive">
+            <label for="passive">Passive player</label><br/>
+
+            <input type="checkbox" name="goodTeamWork" id="goodTeamWork" value="goodTeamWork">
+            <label for="goodTeamWork"> Have good teamwork</label><br><br/>
+
+            <label for = "numberOfTeammates">How many teammates you are looking for:</label>
+            <input list = "numberOfTeammates">
+            <datalist id = "numberOfTeammates">
+                <option value = "1">
+                <option value = "2">
+                <option value = "3">
+            </datalist><br><br/>
+
+            <label for="region">Select your region</label>
+            <select id="region">
+                <optgroup label="America">
+                    <option>North America</option>
+                    <option>Central America</option>                    
+                    <option>South America</option>
+                <optgroup label="Europe">
+                    <option>Estern Europe</option>
+                    <option>Western Europe</option>
+                    <optgroup label="Asia">
+                    <option> North Asia</option>
+                    <option> Central Asia</option>
+                    <option> South Asia</option>
+                    <option> West Asia</option>
+                    <option> East Asia</option>
+                    <option> Southeast Asia</option>
+                    <option> Southwest Asia</option>
+                    <option> Middle Asia</option>
+                <optgroup label="Africa">
+                    <option>Northern Africa</option>
+                    <option>Middle Africa</option>
+                    <option>Southern Africa</option>
+                    <option>East Africa</option>
+                    <option>West Africa</option>
+                <optgroup label="Oceania">
+                    <option>Continental islands</option>
+                    <option>Low islands</option>
+                    <option>High islands</option>
+                <optgroup label="Antarctica">
+                    <option>East Antarctica</option>
+                    <option>West Antarctica</option>          
+            </select><br><br/>
+   
+            <div class="Find Teammates">
+                <legend>To recieve notifications please inform:</legend><br/>
+
+                <label for = "username">Your username:</label>
+                <input type = "text" name = "username" id = "username" required><br><br/>
+               
+                <label for ="email">Your email:</label>
+                <input type="text" name = "email" id = "email" required><br><br/>
+            </div><br/>
+
+            <button onclick="fraseFormulario();">Submit</button>
+            <h2 id="submit"></h2><br/>
+        </form>
+
+    </body>
+</html>
