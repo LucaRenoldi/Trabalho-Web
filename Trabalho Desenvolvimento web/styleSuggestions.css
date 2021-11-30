@@ -16,14 +16,30 @@ h1{
     color:red;
 }
 
-label,textarea{
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    color: red;
+.suggestion{
+    display: flex;
+    justify-content: center;
 }
 
-button{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    color: red;
+.contact{
+width: 100%;
+max-width: 500px;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+}
+
+.field{
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid white;
+border-radius: 5px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 16px;
+}
+
+textarea{
+height: 150px;
 }
