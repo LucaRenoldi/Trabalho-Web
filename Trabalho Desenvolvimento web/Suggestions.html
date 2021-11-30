@@ -6,15 +6,21 @@
     <script src="Buttons.js"></script>
 </head>
 <body>
-    <h1>If you have any suggestion of how we can improve our site, we are more than happy to hear about it.</h1><br>
-
-    <form action="" method="get" class="suggestion" >
-        <label for="suggestion">Give us suggestions</label>
-        <textarea name="suggestion" id="suggestion" cols="30" rows="10">type here...</textarea><br></br>
-
-    </form>
-    <button onclick="fraseSuggestions();">Send it</button><br></br>
-    <h2 id="suggestions"></h2>
+    
+    <section class="suggestion">
+        <div class="contact">
+            <h1>If you have any suggestion of how we can improve our site, we are more than happy to hear about it.</h1><br>
+            <form class="form" method="post" action="./emailSuggestions.php">
+    
+                <input class="field" name="username" placeholder="Username">
+                
+                <textarea class= "field" name="suggestion" placeholder="Suggestions: " cols="30" rows="10"></textarea>
+                <input class="field" type="submit" value="Submit">
+    
+            </form>
+        </div><br/>
+    </section>
+    
 </body>
 
 
