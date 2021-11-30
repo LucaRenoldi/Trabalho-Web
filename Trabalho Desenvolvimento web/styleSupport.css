@@ -9,18 +9,37 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h3,h2,a{
+.support{
+        display: flex;
+        justify-content: center;
+}
+
+.contact{
+    width: 100%;
+    max-width: 500px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+textarea{
+    height: 150px;
+}
+
+h3,h2{
     color:red;
-}
-
-label,textarea{
-    font-size: 20px;
-    color: red;
-}
-
-button{
-    color: red;
-    font-size: 15px;
 }
